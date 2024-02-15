@@ -12,14 +12,7 @@ set(FBX_SDK_PATH "" CACHE PATH "Path to the FBX SDK")
 set(FBX_LIB_DIR "${FBX_SDK_PATH}/lib/vs2022/x64/debug")
 
 project(${FBX_TARGET_NAME})
-add_library(${FBX_TARGET_NAME} SHARED ${FBX_TARGET_SOURCE})
+add_executable(${FBX_TARGET_NAME} ${FBX_TARGET_SOURCE})
 target_include_directories(${FBX_TARGET_NAME} PRIVATE "${FBX_SDK_PATH}/include")
 target_link_libraries(${FBX_TARGET_NAME} PRIVATE "${FBX_LIB_DIR}/libfbxsdk.lib")
 
-add_custom_command(
-    TARGET ${FBX_TARGET_NAME}
-    POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different
-    "${FBX_LIB_DIR}/libfbxsdk.dll"
-    $<TARGET_FILE_DIR:${FBX_TARGET_NAME}>
-)

@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.uxml": "xml",
+        "*.uss": "css",
+        "ssh_config": "ssh_config",
+        ".env.*": "properties",
+        "*.lilblock": "shaderlab",
+        "*.env": "properties",
+        "CmakeSettings.txt": "cmake",
+        "*.i": "swig",
+        ".secrets": "properties",
+        ".secrets.example": "properties",
+        ".vars": "properties",
+        ".vars.sample": "properties",
+        "iostream": "cpp"
+    }
+}
