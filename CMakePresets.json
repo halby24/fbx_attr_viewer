@@ -1,0 +1,17 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 20,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "default",
+            "description": "Default configuration",
+            "cacheVariables": {
+                "FBX_SDK_PATH": "C:/Program Files/Autodesk/FBX/FBX SDK/2020.3.4"
+            }
+        }
+    ]
+}

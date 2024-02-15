@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "defines": [
+                "FBXSDK_DEFINE_NAMESPACE=0",
+                "FBXSDK_NAMESPACE_USING=0"
+            ],
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

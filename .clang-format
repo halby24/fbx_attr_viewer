@@ -1,0 +1,26 @@
+PointerAlignment: Left
+IndentWidth: 4
+ColumnLimit: 200
+BinPackArguments: true
+BinPackParameters: true
+AlignAfterOpenBracket: Align
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: All
+AlignTrailingComments: true
+AlwaysBreakAfterReturnType: None
+IndentPPDirectives: BeforeHash
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterEnum: true
+  AfterStruct: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterUnion: true
+  AfterExternBlock: true
+  AfterControlStatement: true
+  SplitEmptyFunction: false
