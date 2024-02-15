@@ -101,7 +101,11 @@ void read(const FbxPtr<FbxScene>& scene)
                 std::cout << "Polygon " << j << ":" << std::endl;
                 for (int k = 0; k < mesh->GetPolygonSize(j); ++k)
                 {
-                    std::cout << mesh->GetPolygonVertex(j, k) << " ";
+                    std::cout << "  Vertex: " << mesh->GetPolygonVertex(j, k) << std::endl;
+
+                    FbxVector4 normal;
+                    mesh->GetPolygonVertexNormal(j, k, normal);
+                    std::cout << "    Normal: " << normal[0] << ", " << normal[1] << ", " << normal[2] << std::endl;
                 }
                 std::cout << std::endl;
             }
