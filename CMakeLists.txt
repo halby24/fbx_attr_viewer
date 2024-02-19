@@ -4,6 +4,8 @@ cmake_minimum_required(VERSION 3.20)
 
 set(FBX_TARGET_NAME FbxAttrViewer)
 set(FBX_TARGET_SOURCE
+    src/DisplayCommon.h
+    src/DisplayCommon.cpp
     src/main.cpp
 )
 
@@ -15,4 +17,4 @@ project(${FBX_TARGET_NAME})
 add_executable(${FBX_TARGET_NAME} ${FBX_TARGET_SOURCE})
 target_include_directories(${FBX_TARGET_NAME} PRIVATE "${FBX_SDK_PATH}/include")
 target_link_libraries(${FBX_TARGET_NAME} PRIVATE "${FBX_LIB_DIR}/libfbxsdk.lib")
-
+target_compile_definitions(${FBX_TARGET_NAME} PRIVATE "FBXSDK_SHARED")
